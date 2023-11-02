@@ -1,0 +1,335 @@
+$red-color: #D23166;
+$pink-color: #fbf0f4;
+$grey-color: #716162;
+$black-color: #0F0101;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Fredoka', sans-serif;
+    // font-family: 'Hind Madurai', sans-serif;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+header {
+    background: $pink-color;
+}
+
+.button {
+    padding: 14px 50px;
+    border: 2px solid $red-color;
+    border-radius: 5px;
+    background-color: $red-color;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease;
+
+    &:hover {
+        background: transparent;
+        color: $red-color;
+    }
+}
+
+nav {
+    background: transparent;
+    padding: 10px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+
+            li:nth-child(1) a {
+                color: $red-color
+            }
+        }
+
+        a {
+            color: $grey-color;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all .5s ease;
+            letter-spacing: .5px;
+
+            &:hover {
+                color: $red-color;
+            }
+        }
+    }
+}
+
+.hero {
+    padding: 160px 0;
+    position: relative;
+
+    .left {
+        width: 620px;
+    }
+
+    h5 {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: $black-color;
+    }
+
+    h1 {
+        font-family: 'Fredoka', sans-serif;
+        font-weight: 700;
+        font-size: 57.33px;
+        line-height: 69.08px;
+        color: $black-color;
+        margin-bottom: 35px;
+
+        span {
+            color: $red-color;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        max-width: 523px;
+        font-size: 18px;
+        font-family: 'Hind Madurai', sans-serif;
+        line-height: 27px;
+        color: $grey-color;
+        margin-bottom: 50px;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        right: -240px;
+        transition: all 2s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.services {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 22.32%;
+        border-radius: 7px;
+        box-shadow: 20px 20px 50px 0px #00000008;
+        padding: 30px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 1s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 8px;
+            font-family: 'Hind Madurai', sans-serif;
+        }
+
+        p {
+            font-size: 14px;
+            color: $grey-color;
+            font-family: 'Hind Madurai', sans-serif;
+        }
+    }
+}
+
+.oatmea {
+    background: $pink-color;
+    padding: 120px 0;
+
+    .container {
+        position: relative;
+    }
+
+    h2 {
+        width: 349px;
+        font-size: 44.2px;
+        font-weight: 600;
+        color: $black-color;
+        font-family: 'Hind Madurai', sans-serif;
+        line-height: 48.84px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        max-width: 442px;
+        font-size: 16px;
+        line-height: 24px;
+        color: $grey-color;
+        margin-bottom: 40px;
+    }
+
+    img {
+        position: absolute;
+        top: -210px;
+        right: -40px;
+        transition: all 1.5s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.products {
+    padding: 120px 0;
+
+    h2 {
+        text-align: center;
+        font-family: 'Hind Madurai', sans-serif;
+        font-weight: 600;
+        font-size: 44.2px;
+        color: $black-color;
+        margin-bottom: 48px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+
+        li:nth-child(1) {
+            border-bottom: 2px solid $red-color;
+
+            a {
+                color: black;
+            }
+        }
+
+        margin-bottom: 60px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: $grey-color;
+        transition: all .5s ease;
+
+        &:hover {
+            color: $red-color;
+        }
+    }
+
+    .product {
+        display: flex;
+        justify-content: center;
+        gap: 64px;
+        align-items: center;
+        margin-bottom: 60px;
+
+        h3 {
+            font-family: 'Hind Madurai', sans-serif;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 24px;
+            color: $grey-color;
+            margin-bottom: 16px;
+        }
+
+        h4 {
+            font-weight: 500;
+            font-family: 'Hind Madurai', sans-serif;
+            font-size: 26px;
+            margin-bottom: 8px;
+
+            span {
+                font-size: 20px;
+                color: $grey-color;
+                text-decoration: line-through;
+            }
+        }
+
+        img {
+            cursor: pointer;
+            transition: all 2s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .person {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 40px;
+
+        h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28.13px;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 4px;
+        }
+
+        h5 {
+            font-weight: 500;
+            font-size: 12px;
+            color: $grey-color;
+            cursor: pointer;
+        }
+    }
+
+    .people {
+        gap: 222px;
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        .carusel {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            img {
+                cursor: pointer;
+                transition: all .5s ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
