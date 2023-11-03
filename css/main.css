@@ -279,4 +279,63 @@ nav .container a:hover {
 }
 .products .people .carusel img:hover {
   transform: scale(1.05);
+}
+
+.raspberry {
+  background: #fbf0f4;
+  padding: 80px 120px;
+}
+.raspberry .container {
+  position: relative;
+}
+.raspberry .o-1 {
+  position: absolute;
+  right: -40px;
+  top: -140px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.raspberry .o-1:hover {
+  transform: scale(1.05);
+}
+.raspberry h2 {
+  font-weight: 500;
+  font-size: 44.2px;
+  margin-bottom: 16px;
+}
+.raspberry p {
+  width: 600px;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #716162;
+  margin-bottom: 20px;
+}
+.raspberry a {
+  text-decoration: none;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+  color: black;
+  transition: all 0.5s ease;
+}
+.raspberry a:nth-child(5) {
+  margin-bottom: 20px;
+}
+.raspberry a:hover {
+  color: #D23166;
+}
+.raspberry .download {
+  position: relative;
+  left: -16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.raspberry .download img {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.raspberry .download img:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=main.css.map */
